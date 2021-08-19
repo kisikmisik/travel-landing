@@ -1,0 +1,29 @@
+.container {
+  @include push--auto;
+
+  width: 61%;
+}
+
+.outline {
+  border: 1px solid darkslategrey;
+
+  &--blue {
+    border: 1px solid aqua;
+  }
+
+  &--red {
+    border-color: tomato;
+  }
+}
+
+@media (max-width: $desktop) {
+  .container {
+    width: 94.53125%;
+  }
+}
+
+@media (max-width: $tablet) {
+  .container {
+    width: 90%;
+  }
+}

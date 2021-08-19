@@ -1,0 +1,59 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+body {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  min-width: 320px;
+  font-family: $font-main;
+  font-size: 14px;
+  line-height: 17px;
+  font-weight: 400;
+  color: $black;
+  background-color: #ffffff;
+  overflow-x: hidden;
+  background-image: url("../img/page-bg.svg");
+  background-repeat: no-repeat;
+  background-size: 75.1556%;
+  background-position: center 2694px;
+
+  // в макете цвет изображения слишком светлый, совсем не видно на фоне
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+svg {
+  fill: currentColor;
+}
+
+@media (max-width: $desktop) {
+  body {
+    background-image: none;
+  }
+}

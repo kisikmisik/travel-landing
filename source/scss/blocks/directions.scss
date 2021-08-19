@@ -1,0 +1,141 @@
+.directions {
+  margin-top: -20px;
+  padding: 51px 0 120px;
+}
+
+.directions__content {
+  padding-top: 84px;
+}
+
+.directions__list {
+  @include list-reset;
+}
+
+.directions__item {
+  position: relative;
+  display: none;
+  flex-wrap: wrap;
+
+  &--show {
+    display: flex;
+  }
+}
+
+.directions__description {
+  width: 36.45%;
+  margin-right: 3.7577%;
+  min-width: 300px;
+  margin-bottom: 17px;
+}
+
+.directions__title {
+  margin: 0;
+  margin-bottom: 53px;
+  font-size: 55px;
+  line-height: 90px;
+  font-weight: 600;
+  letter-spacing: -4.245px;
+  color: $black-alt;
+}
+
+.directions__text {
+  margin: 0;
+  margin-bottom: 49px;
+  padding-right: 56px;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 28px;
+  letter-spacing: -0.2px;
+  color: rgba($color: $black-alt, $alpha: 0.7);
+}
+
+.directions__button {
+  width: 250px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.directions__feedback {
+  margin-top: -5px;
+}
+
+@media (max-width: $desktop) {
+  .directions {
+    margin-top: 0;
+    padding-bottom: 20px;
+    overflow: hidden;
+  }
+
+  .directions__content {
+    padding-top: 32px;
+  }
+
+  .directions__title {
+    margin-bottom: 20px;
+    font-size: 30px;
+    line-height: 45px;
+    letter-spacing: -1px;
+    text-align: center;
+  }
+
+  .directions__item {
+    flex-direction: column;
+  }
+
+  .directions__description {
+    margin-right: 0;
+    margin-bottom: 30px;
+    width: auto;
+  }
+
+  .directions__text {
+    margin-bottom: 20px;
+    padding: 0;
+    text-align: center;
+    letter-spacing: -0.3px;
+  }
+
+  .directions__button {
+    margin: 0 auto;
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 12px;
+  }
+
+  .directions__feedback {
+    @include full-width;
+
+    margin-top: 0;
+  }
+}
+
+@media (max-width: $tablet) {
+  .directions {
+    padding-top: 10px;
+    padding-bottom: 40px;
+  }
+
+  .directions__content {
+    padding-top: 23px;
+  }
+
+  .directions__title {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 36px;
+  }
+
+  .directions__description {
+    margin-bottom: 50px;
+    min-width: auto;
+  }
+
+  .directions__text {
+    padding: 0 2px;
+  }
+
+  .directions__button {
+    width: 288px;
+  }
+}
+

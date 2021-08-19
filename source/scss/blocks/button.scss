@@ -1,0 +1,32 @@
+.button {
+  @include button-reset;
+  @include transition;
+
+  display: block;
+  padding: 30px 20px 30px;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 15px;
+  letter-spacing: 1.9px;
+  color: $white;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: $orange;
+  cursor: pointer;
+
+
+  &:hover {
+    background-color: $orange-hover;
+  }
+
+  &:active {
+    color: rgba($color: $white, $alpha: 0.7);
+  }
+}
+
+@media (max-width: $desktop) {
+  .button {
+    padding: 19px 20px 19px;
+    font-weight: 500;
+  }
+}
