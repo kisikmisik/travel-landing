@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Way. Путешествия по Европе.">
+  <meta name="keywords"
+        content="Туристическое агетство, Туры, отдых, экскурсии, Европа">
+  <title>Путешествия по Европе</title>
+  <link rel="preload" href="fonts/Montserrat.woff2" as="font" type="font/woff2">
+  <link rel="preload" href="fonts/Poppinsregular.woff2" as="font" type="font/woff2">
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+
+<header></header>
+
+<main>
+  <section class="greetings">
+    <div class="greetings__inner">
+      <div class="greetings__wrapper">
+        <h1 class="greetings__title">Путешествие по Европе</h1>
+      </div>
+      <p class="greetings__text">
+        В этом туре вы откроете для себя Европу в новом свете. Вас ждет: море, горы, а также потрясающая красота
+        природы.
+      </p>
+      <a class="button greetings__button" href="#directions">
+        Смотреть тур
+      </a>
+    </div>
+  </section>
+
+  <section class="prices" id="prices">
+    <div class="prices__container container">
+      <ul class="prices__list">
+        <li class="prices__item package">
+          <div class="package__wrapper">
+            <header class="package__header">
+              <div class="package__inner">
+                <h3 class="package__title">Комплексный</h3>
+                <p class="package__price"><span>$</span>1999</p>
+                <p class="package__promo">
+                  Ознакомьтесь с перечнем того, что входит в данный пакет
+                </p>
+              </div>
+            </header>
+            <ul class="package__list">
+              <li class="package__item">
+                <svg class="package__check">
+                  <use xlink:href="#icon-check" width="22" height="22"></use>
+                </svg>
+                Разработанный маршрут с гидом группы
+              </li>
+
+              <li class="package__item">
+                <svg class="package__check">
+                  <use xlink:href="#icon-check" width="22" height="22"></use>
+                </svg>
+                Перелет, трансфер и проживание в отелях
+              </li>
+
+              <li class="package__item">
+                <svg class="package__check">
+                  <use xlink:href="#icon-check" width="22" height="22"></use>
+                </svg>
+                Завтраки, ужины в отелях и ланчи на природе
+              </li>
+
+              <li class="package__item">
+                <svg class="package__check">
+                  <use xlink:href="#icon-check" width="22" height="22"></use>
+                </svg>
+                Экскурсии по удивительно красивым местам Европы
+              </li>
+            </ul>
+          </div>
+          <button type="button" class="package__button button button--buy">Купить тур сейчас</button>
+        </li>
+
+        <li class="prices__item package package--simple">
+          <div class="package__wrapper">
+            <header class="package__header">
+              <div class="package__inner">
+                <h3 class="package__title">Экономный</h3>
+                <p class="package__price"><span>$</span>1399</p>
+                <p class="package__promo">
+                  Ознакомьтесь с перечнем того, что входит в данный пакет
+                </p>
+              </div>
+            </header>
+            <ul class="package__list">
+              <li class="package__item">
+                <svg class="package__check">
+                  <use xlink:href="#icon-check" width="22" height="22"></use>
+                </svg>
+                Разработанный маршрут с гидом группы
+              </li>
+
+              <li class="package__item">
+                <svg class="package__check">
+                  <use xlink:href="#icon-check" width="22" height="22"></use>
+                </svg>
+                Перелет и трансфер
+              </li>
+
+              <li class="package__item">
+                <svg class="package__check">
+                  <use xlink:href="#icon-check" width="22" height="22"></use>
+                </svg>
+                Проживание в хостелах при отелях
+              </li>
+
+              <li class="package__item">
+                <svg class="package__check">
+                  <use xlink:href="#icon-check" width="22" height="22"></use>
+                </svg>
+                Только завтраки в отелях
+              </li>
+
+              <li class="package__item">
+                <svg class="package__check">
+                  <use xlink:href="#icon-check" width="22" height="22"></use>
+                </svg>
+                Экскурсии по удивительно красивым местам Европы
+              </li>
+            </ul>
+          </div>
+          <button type="button" class="package__button button button--buy">Купить тур сейчас</button>
+        </li>
+      </ul>
+
+      <div class="prices__inner">
+        <h2 class="prices__title">Цены</h2>
+        <p class="prices__text">
+          Специально для Вас мы разработали 2 пакета цен с разными условиями, отталкиваясь от Ваших потребностей и
+          возможностей. Выберите для себя лучший вариант отпуска и отдохните на все 100%!
+        </p>
+
+        <div class="prices__contacts">
+          <h4 class="prices__callback">Свяжитесь с нами</h4>
+          <a href="tel:+749978468446" class="prices__link">
+            <svg class="prices__phone-icon" width="30" height="30">
+              <use xlink:href="#icon-phone"></use>
+            </svg>
+            +7 (499) -784-684-46
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="contact">
+    <h2 class="visually-hidden">Форма запроса обратного звонка</h2>
+    <div class="contact__wrapper">
+      <div class="contact__inner">
+        <form class="contact__form form" method="POST" action="#">
+          <h3 class="form__title">У Вас остались вопросы?</h3>
+          <p class="form__text">Оставьте свой номер или e-mail и мы свяжемся с Вами</p>
+          <div class="form__inner">
+            <div class="form__wrapper form__wrapper--required">
+              <label for="tel" class="visually-hidden">Введите номер телефона</label>
+              <span class="form__error">Данные не верны</span>
+              <input class="form__input form__input--tel" name="tel" id="tel" type="tel"
+                     placeholder="+7   Введите 10 цифр номера" required>
+            </div>
+            <div class="form__wrapper">
+              <label for="email" class="visually-hidden">Введите адрес электронной почты</label>
+              <span class="form__error">Данные не верны</span>
+              <input class="form__input" name="email" id="email" type="email" placeholder="E-mail">
+            </div>
+          </div>
+          <button class="button form__button" type="submit">Отправить</button>
+        </form>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer></footer>
+
+<div class="popup popup--buy">
+  <div class="popup__inner">
+    <button class="popup__close"></button>
+    <div class="popup__img-wrapper">
+      <picture>
+        <source srcset="img/popup-desktop@1x.webp 1x, img/popup-desktop@2x.webp 2x" type="image/webp">
+
+        <img class="popup__img" src="img/popup-desktop@1x.jpg" srcset="img/popup-desktop@2x.jpg 2x" width="338"
+             height="444" loading="lazy" alt="фотография побережья">
+      </picture>
+    </div>
+    <form class="popup__form form" action="#" method="POST">
+      <h2 class="popup__title">Купить тур</h2>
+      <div class="popup__inputs">
+        <div class="popup__wrapper popup__wrapper--required">
+          <label for="popupTel" class="visually-hidden">Введите номер телефона</label>
+          <span class="popup__error form__error">Данные не верны</span>
+          <input class="popup__input popup__input--tel" id="popupTel" type="tel"
+                 placeholder="+7 Введите 10 цифр номера" required>
+        </div>
+        <div class="popup__wrapper">
+          <label for="popupMail" class="visually-hidden">Введите адрес электронной почты</label>
+          <span class="popup__error form__error">Данные не верны</span>
+          <input class="popup__input popup__input--email" id="popupMail" type="email" placeholder="E-mail">
+        </div>
+      </div>
+      <button class="button popup__submit" type="submit">Отправить</button>
+    </form>
+  </div>
+</div>
+
+<div class="popup popup--success">
+  <div class="popup__inner popup__inner--success">
+    <button class="popup__close"></button>
+    <h2 class="popup__title popup__title--success">Форма успешно отправлена, спасибо! :)</h2>
+  </div>
+</div>
+</body>
+</html>
