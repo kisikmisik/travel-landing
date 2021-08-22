@@ -1,9 +1,9 @@
-.places {
+.countries {
   padding: 70px 0 50px;
   color: $black-alt;
 }
 
-.places__title {
+.countries__title {
   position: relative;
   margin: 0;
   margin-bottom: 64px;
@@ -23,7 +23,7 @@
   }
 }
 
-.places__text {
+.countries__text {
   margin: 0;
   margin-bottom: 55px;
   width: 28.18104%;
@@ -33,7 +33,7 @@
   color: rgba($color: $black-alt, $alpha: 0.7);
 }
 
-.places__list {
+.countries__list {
   @include list-reset;
 
   display: flex;
@@ -41,7 +41,7 @@
   justify-content: center;
 }
 
-.places__item {
+.countries__item {
   position: relative;
   display: flex;
   margin-left: 5.12382%;
@@ -66,32 +66,32 @@
   &:hover {
     box-shadow: 0 4px 15px rgba($color: $default-black, $alpha: 0.25);
 
-    .places__hover {
+    .countries__hover {
       transform: scale(1);
     }
 
-    .places__img {
+    .countries__img {
       transform: scale(1.2);
     }
   }
 }
 
-.places__link {
+.countries__link {
   display: block;
   width: 100%;
 }
 
-.places__img-container {
+.countries__img-container {
   overflow: hidden;
 }
 
-.places__img {
+.countries__img {
   width: 100%;
   height: auto;
   transition: transform 0.3s ease;
 }
 
-.places__label {
+.countries__label {
   position: absolute;
   bottom: 0;
   left: 50%;
@@ -108,7 +108,7 @@
   color: $black-alt;
 }
 
-.places__hover {
+.countries__hover {
   @include transition;
 
   position: absolute;
@@ -124,7 +124,7 @@
   transition: transform 0.3s ease;
 }
 
-.places__button {
+.countries__button {
   @include transition;
 
   display: flex;
@@ -152,7 +152,7 @@
 }
 
 @media (max-width: $desktop) {
-  .places {
+  .countries {
     padding-top: 80px;
     padding-bottom: 32px;
 
@@ -161,7 +161,7 @@
     }
   }
 
-  .places__title {
+  .countries__title {
     margin-bottom: 20px;
     width: 100%;
     font-size: 30px;
@@ -174,13 +174,13 @@
     }
   }
 
-  .places__text {
+  .countries__text {
     margin: 0 auto 40px;
     text-align: center;
     width: 56.865%;
   }
 
-  .places__item {
+  .countries__item {
     margin: 0;
     margin-bottom: 20px;
     margin-right: 29px;
@@ -200,15 +200,15 @@
     }
   }
 
-  .places__hover {
+  .countries__hover {
     display: none;
   }
 
-  .places__link {
+  .countries__link {
     width: 100%;
   }
 
-  .places__label {
+  .countries__label {
     margin-left: -37.3263%;
     width: 74.6527%;
     font-size: 24px;
@@ -216,7 +216,7 @@
 }
 
 @media (max-width: $tablet) {
-  .places {
+  .countries {
     padding-top: 70px;
     padding-bottom: 14px;
 
@@ -225,27 +225,27 @@
     }
   }
 
-  .places__inner {
+  .countries__inner {
     margin: 0 auto;
     max-width: 450px;
   }
 
-  .places__title {
+  .countries__title {
     font-size: 24px;
     line-height: 36px;
   }
 
-  .places__text {
+  .countries__text {
     margin-bottom: 19px;
     width: 100%;
   }
 
-  .places__list {
+  .countries__list {
     flex-direction: column;
     align-items: center;
   }
 
-  .places__item {
+  .countries__item {
     margin: 0;
     margin-bottom: 35px;
     width: 100%;

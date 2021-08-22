@@ -18,27 +18,27 @@
     <include src="build/img/sprite.svg"></include>
   </div>
 
-  <header class="page-header page-header--nojs">
-    <div class="page-header__wrapper container">
-      <a href="index.html" class="page-header__logo">
-        <img class="page-header__logo-img" src="img/page-logo.svg" width="57" height="22" alt="логотип компании">
+  <header class="main-header main-header--nojs">
+    <div class="main-header__wrapper container">
+      <a href="index.html" class="main-header__logo">
+        <img class="main-header__logo-img" src="img/main-logo.svg" width="57" height="22" alt="логотип компании">
       </a>
       <button class="toggler" type="button" aria-expanded="false" aria-controls="menu-list">Меню</button>
       <nav class="page-nav">
         <ul class="page-nav__list" id="menu-list">
           <li class="page-nav__item">
-            <a href="#places" class="page-nav__link">О путешествии</a>
+            <a href="#countries" class="page-nav__link">О путешествии</a>
           </li>
           <li class="page-nav__item">
             <a href="#prices" class="page-nav__link">Цены</a>
           </li>
         </ul>
       </nav>
-      <div class="page-header__contacts">
-        <ul class="page-header__list">
-          <li class="page-header__item page-header__item--phone">
-            <a href="tel:+749978468446" class="page-header__link">
-              <svg class="page-header__icon">
+      <div class="main-header__contacts">
+        <ul class="main-header__list">
+          <li class="main-header__item main-header__item--phone">
+            <a href="tel:+749978468446" class="main-header__link">
+              <svg class="main-header__icon">
                 <use xlink:href="#icon-phone" width="30" height="30"></use>
               </svg>
               +7 (499) -784-684-46
@@ -51,8 +51,6 @@
 
   <main class="page-main">
 
-    <!-- PROMO -->
-
     <section class="promo">
       <div class="promo__inner">
         <div class="promo__wrapper">
@@ -62,143 +60,141 @@
           В этом туре вы откроете для себя Европу в новом свете. Вас ждет: море, горы, а также потрясающая красота
           природы.
         </p>
-        <a class="button promo__button" href="#directions">
+        <a class="button promo__button" href="#countries-details">
           Смотреть тур
         </a>
       </div>
     </section>
 
-    <!-- PLACES -->
-
-    <section class="places" id="places">
+    <section class="countries" id="countries">
       <div class="container">
-        <div class="places__inner">
-          <h2 class="places__title">Места посещения</h2>
-          <p class="places__text">
+        <div class="countries__inner">
+          <h2 class="countries__title">Места посещения</h2>
+          <p class="countries__text">
             Вы можете выбрать полный тур или частичный, с посещением первых 3 мест
           </p>
         </div>
-        <ul class="places__list">
-          <li class="places__item">
-            <a href="#directions" class="places__link" data-tabindex="0">
-              <div class="places__img-container">
+        <ul class="countries__list">
+          <li class="countries__item">
+            <a href="#countries-details" class="countries__link" data-tabindex="0">
+              <div class="countries__img-container">
                 <picture>
                   <source media="(max-width: 1023px)"
-                    srcset="img/places-greece-mobile@1x.webp 1x, img/places-greece-mobile@2x.webp 2x" type="image/webp">
+                    srcset="img/countries-greece-mobile@1x.webp 1x, img/countries-greece-mobile@2x.webp 2x" type="image/webp">
                   <source media="(min-width: 1024px)"
-                    srcset="img/places-greece-desktop@1x.webp 1x, img/places-greece-desktop@2x.webp 2x"
+                    srcset="img/countries-greece-desktop@1x.webp 1x, img/countries-greece-desktop@2x.webp 2x"
                     type="image/webp">
 
                   <source media="(max-width: 1023px)"
-                    srcset="img/places-greece-mobile@1x.jpg 1x, img/places-greece-mobile@2x.jpg 2x">
-                  <img class="places__img" src="img/places-greece-desktop@1x.jpg"
-                    srcset="img/places-greece-desktop@2x.jpg 2x" width="350" height="430" loading="lazy"
-                    alt="Греческий пейзаж">
+                    srcset="img/countries-greece-mobile@1x.jpg 1x, img/countries-greece-mobile@2x.jpg 2x">
+                  <img class="countries__img" src="img/countries-greece-desktop@1x.jpg"
+                    srcset="img/countries-greece-desktop@2x.jpg 2x" width="350" height="430" loading="lazy"
+                    alt="Пейзаж в Греции">
                 </picture>
               </div>
-              <span class="places__label">Греция</span>
-              <div class="places__hover" data-tabindex="0">
-                <span class="places__button">Смотреть подробнее</span>
+              <span class="countries__label">Греция</span>
+              <div class="countries__hover" data-tabindex="0">
+                <span class="countries__button">Смотреть подробнее</span>
               </div>
             </a>
           </li>
 
-          <li class="places__item">
-            <a href="#directions" class="places__link" data-tabindex="1">
-              <div class="places__img-container">
+          <li class="countries__item">
+            <a href="#countries-details" class="countries__link" data-tabindex="1">
+              <div class="countries__img-container">
                 <picture>
                   <source media="(max-width: 1023px)"
-                    srcset="img/places-albania-mobile@1x.webp 1x, img/places-albania-mobile@2x.webp 2x"
+                    srcset="img/countries-albania-mobile@1x.webp 1x, img/countries-albania-mobile@2x.webp 2x"
                     type="image/webp">
                   <source media="(min-width: 1024px)"
-                    srcset="img/places-albania-desktop@1x.webp 1x, img/places-albania-desktop@2x.webp 2x"
+                    srcset="img/countries-albania-desktop@1x.webp 1x, img/countries-albania-desktop@2x.webp 2x"
                     type="image/webp">
 
                   <source media="(max-width: 1023px)"
-                    srcset="img/places-albania-mobile@1x.jpg 1x, img/places-albania-mobile@2x.jpg 2x">
-                  <img class="places__img" src="img/places-albania-desktop@1x.jpg"
-                    srcset="img/places-albania-desktop@2x.jpg 2x" width="350" height="430" loading="lazy"
-                    alt="Греческий пейзаж">
+                    srcset="img/countries-albania-mobile@1x.jpg 1x, img/countries-albania-mobile@2x.jpg 2x">
+                  <img class="countries__img" src="img/countries-albania-desktop@1x.jpg"
+                    srcset="img/countries-albania-desktop@2x.jpg 2x" width="350" height="430" loading="lazy"
+                    alt="Пейзаж Албании">
                 </picture>
               </div>
-              <span class="places__label">Албания</span>
-              <div class="places__hover" data-tabindex="1">
-                <span class="places__button">Смотреть подробнее</span>
+              <span class="countries__label">Албания</span>
+              <div class="countries__hover" data-tabindex="1">
+                <span class="countries__button">Смотреть подробнее</span>
               </div>
             </a>
           </li>
 
-          <li class="places__item">
-            <a href="#directions" class="places__link" data-tabindex="2">
-              <div class="places__img-container">
+          <li class="countries__item">
+            <a href="#countries-details" class="countries__link" data-tabindex="2">
+              <div class="countries__img-container">
                 <picture>
                   <source media="(max-width: 1023px)"
-                    srcset="img/places-macedonia-mobile@1x.webp 1x, img/places-macedonia-mobile@2x.webp 2x"
+                    srcset="img/countries-macedonia-mobile@1x.webp 1x, img/countries-macedonia-mobile@2x.webp 2x"
                     type="image/webp">
                   <source media="(min-width: 1024px)"
-                    srcset="img/places-macedonia-desktop@1x.webp 1x, img/places-macedonia-desktop@2x.webp 2x"
+                    srcset="img/countries-macedonia-desktop@1x.webp 1x, img/countries-macedonia-desktop@2x.webp 2x"
                     type="image/webp">
 
                   <source media="(max-width: 1023px)"
-                    srcset="img/places-macedonia-mobile@1x.jpg 1x, img/places-macedonia-mobile@2x.jpg 2x">
-                  <img class="places__img" src="img/places-macedonia-desktop@1x.jpg"
-                    srcset="img/places-macedonia-desktop@2x.jpg 2x" width="350" height="430" loading="lazy"
-                    alt="Греческий пейзаж">
+                    srcset="img/countries-macedonia-mobile@1x.jpg 1x, img/countries-macedonia-mobile@2x.jpg 2x">
+                  <img class="countries__img" src="img/countries-macedonia-desktop@1x.jpg"
+                    srcset="img/countries-macedonia-desktop@2x.jpg 2x" width="350" height="430" loading="lazy"
+                    alt="Пейзаж в Македонии">
                 </picture>
               </div>
-              <span class="places__label">Македония</span>
-              <div class="places__hover" data-tabindex="2">
-                <span class="places__button">Смотреть подробнее</span>
+              <span class="countries__label">Македония</span>
+              <div class="countries__hover" data-tabindex="2">
+                <span class="countries__button">Смотреть подробнее</span>
               </div>
             </a>
           </li>
 
-          <li class="places__item">
-            <a href="#directions" class="places__link" data-tabindex="3">
-              <div class="places__img-container">
+          <li class="countries__item">
+            <a href="#countries-details" class="countries__link" data-tabindex="3">
+              <div class="countries__img-container">
                 <picture>
                   <source media="(max-width: 1023px)"
-                    srcset="img/places-montenegro-mobile@1x.webp 1x, img/places-montenegro-mobile@2x.webp 2x"
+                    srcset="img/countries-montenegro-mobile@1x.webp 1x, img/countries-montenegro-mobile@2x.webp 2x"
                     type="image/webp">
                   <source media="(min-width: 1024px)"
-                    srcset="img/places-montenegro-desktop@1x.webp 1x, img/places-montenegro-desktop@2x.webp 2x"
+                    srcset="img/countries-montenegro-desktop@1x.webp 1x, img/countries-montenegro-desktop@2x.webp 2x"
                     type="image/webp">
 
                   <source media="(max-width: 1023px)"
-                    srcset="img/places-montenegro-mobile@1x.jpg 1x, img/places-montenegro-mobile@2x.jpg 2x">
-                  <img class="places__img" src="img/places-montenegro-desktop@1x.jpg"
-                    srcset="img/places-montenegro-desktop@2x.jpg 2x" width="350" height="430" loading="lazy"
-                    alt="Греческий пейзаж">
+                    srcset="img/countries-montenegro-mobile@1x.jpg 1x, img/countries-montenegro-mobile@2x.jpg 2x">
+                  <img class="countries__img" src="img/countries-montenegro-desktop@1x.jpg"
+                    srcset="img/countries-montenegro-desktop@2x.jpg 2x" width="350" height="430" loading="lazy"
+                    alt="Пейзаж Черногории">
                 </picture>
               </div>
-              <span class="places__label">Черногория</span>
-              <div class="places__hover" data-tabindex="3">
-                <span class="places__button">Смотреть подробнее</span>
+              <span class="countries__label">Черногория</span>
+              <div class="countries__hover" data-tabindex="3">
+                <span class="countries__button">Смотреть подробнее</span>
               </div>
             </a>
           </li>
 
-          <li class="places__item">
-            <a href="#directions" class="places__link" data-tabindex="4">
-              <div class="places__img-container">
+          <li class="countries__item">
+            <a href="#countries-details" class="countries__link" data-tabindex="4">
+              <div class="countries__img-container">
                 <picture>
                   <source media="(max-width: 1023px)"
-                    srcset="img/places-croatia-mobile@1x.webp 1x, img/places-croatia-mobile@2x.webp 2x"
+                    srcset="img/countries-croatia-mobile@1x.webp 1x, img/countries-croatia-mobile@2x.webp 2x"
                     type="image/webp">
                   <source media="(min-width: 1024px)"
-                    srcset="img/places-croatia-desktop@1x.webp 1x, img/places-croatia-desktop@2x.webp 2x"
+                    srcset="img/countries-croatia-desktop@1x.webp 1x, img/countries-croatia-desktop@2x.webp 2x"
                     type="image/webp">
 
                   <source media="(max-width: 1023px)"
-                    srcset="img/places-croatia-mobile@1x.jpg 1x, img/places-croatia-mobile@2x.jpg 2x">
-                  <img class="places__img" src="img/places-croatia-desktop@1x.jpg"
-                    srcset="img/places-croatia-desktop@2x.jpg 2x" width="350" height="430" loading="lazy"
-                    alt="Греческий пейзаж">
+                    srcset="img/countries-croatia-mobile@1x.jpg 1x, img/countries-croatia-mobile@2x.jpg 2x">
+                  <img class="countries__img" src="img/countries-croatia-desktop@1x.jpg"
+                    srcset="img/countries-croatia-desktop@2x.jpg 2x" width="350" height="430" loading="lazy"
+                    alt="Пейзаж в Хорватии">
                 </picture>
               </div>
-              <span class="places__label">Хорватия</span>
-              <div class="places__hover" data-tabindex="4">
-                <span class="places__button">Смотреть подробнее</span>
+              <span class="countries__label">Хорватия</span>
+              <div class="countries__hover" data-tabindex="4">
+                <span class="countries__button">Смотреть подробнее</span>
               </div>
             </a>
           </li>
@@ -206,13 +202,11 @@
       </div>
     </section>
 
-    <!-- DIRECTIONS -->
+    <section class="countries-details" id="countries-details">
+      <h2 class="visually-hidden" id="countries-details-header">Описание направлений туров</h2>
 
-    <section class="directions" id="directions">
-      <h2 class="visually-hidden" id="directions-header">Описание направлений туров</h2>
-
-      <div class="directions__tabs container tabs">
-        <ul class="tabs__list" draggable="true" aria-labelledby="directions-header">
+      <div class="countries-details__tabs container tabs">
+        <ul class="tabs__list" draggable="true" aria-labelledby="countries-details-header">
           <li class="tabs__item">
             <a href="" class="tabs__link tabs__link--active" data-tab="0">Греция</a>
           </li>
@@ -236,274 +230,271 @@
       </div>
 
       <div class="container">
-        <div class="directions__content">
-          <ul class="directions__list">
-            <!-- 1 -->
-            <li class="directions__item directions__item--show">
-              <div class="directions__description">
-                <h3 class="directions__title">Греция</h3>
-                <p class="directions__text">
+        <div class="countries-details__content">
+          <ul class="countries-details__list">
+            <li class="countries-details__item countries-details__item--show">
+              <div class="countries-details__description">
+                <h3 class="countries-details__title">Греция</h3>
+                <p class="countries-details__text">
                   На севере Греции находится один из крупнейших комплексов монастырей, расположенных на вершинах скал.
                   Название его «Метеора» буквально переводится как «висящие в воздухе». Этот монастырь основная цель
                   нашего путешествия в Греции. После покарения скал из песчанника и обломочной горной породы,
                   достигающих в высоту 600 метров, наградой будет неописуемая красота природы и атмосфера, царящая в
                   монастырях Метеоры.
                 </p>
-                <button type="button" class="directions__button button button--buy">Купить тур сейчас</button>
+                <button type="button" class="countries-details__button button button--buy">Купить тур сейчас</button>
               </div>
-              <div class="directions__feedback feedback">
-                <div class="feedback__img-container">
+              <div class="countries-details__review review">
+                <div class="review__img-container">
                   <picture>
                     <source media="(max-width: 767px)"
-                      srcset="img/feedback-bg-mobile@1x.webp 1x, img/feedback-bg-mobile@2x.webp 2x" type="image/webp">
+                      srcset="img/review-bg-mobile@1x.webp 1x, img/review-bg-mobile@2x.webp 2x" type="image/webp">
                     <source media="(max-width: 1023px)"
-                      srcset="img/feedback-tablet@1x.webp 1x, img/feedback-tablet@2x.webp 2x" type="image/webp">
+                      srcset="img/review-tablet@1x.webp 1x, img/review-tablet@2x.webp 2x" type="image/webp">
                     <source media="(min-width: 1024px)"
-                      srcset="img/feedback-bg-greece-desktop@1x.webp 1x, img/feedback-bg-greece-desktop@2x.webp 2x"
+                      srcset="img/review-bg-greece-desktop@1x.webp 1x, img/review-bg-greece-desktop@2x.webp 2x"
                       type="image/webp">
 
                     <source media="(max-width: 767px)"
-                      srcset="img/feedback-bg-mobile@1x.jpg 1x, img/feedback-bg-mobile@2x.jpg 2x">
+                      srcset="img/review-bg-mobile@1x.jpg 1x, img/review-bg-mobile@2x.jpg 2x">
                     <source media="(max-width: 1023px)"
-                      srcset="img/feedback-tablet@1x.jpg 1x, img/feedback-tablet@2x.jpg 2x">
-                    <!-- В макете нет изображений планшетной и мобильной версии для других табов, поэтому оставил изображения как у Греции -->
-                    <img class="feedback__img" src="img/feedback-bg-greece-desktop@1x.jpg"
-                      srcset="img/feedback-bg-greece-desktop@2x.jpg 2x" width="430" height="596" loading="lazy"
-                      alt="Греческий пейзаж">
+                      srcset="img/review-tablet@1x.jpg 1x, img/review-tablet@2x.jpg 2x">
+                    <img class="review__img" src="img/review-bg-greece-desktop@1x.jpg"
+                      srcset="img/review-bg-greece-desktop@2x.jpg 2x" width="430" height="596" loading="lazy"
+                      alt="Пейзаж в Греции">
                   </picture>
                 </div>
-                <div class="feedback__feed">
-                  <h4 class="feedback__title">Отзывы</h4>
-                  <p class="feedback__text">
+                <div class="review__feed">
+                  <h4 class="review__title">Отзывы</h4>
+                  <p class="review__text">
                     Метеоры в Греции можно сравнить разве что с Монсерратт в Испании. Такие же высоченные скалы. Но
                     здесь потрясает масштаб. Огромная территория, высоко в горах. Ощущение такое, как будто стоишь на
                     краю света!
                   </p>
-                  <div class="feedback__author">
-                    <div class="feedback__avatar">
+                  <div class="review__author">
+                    <div class="review__avatar">
                       <picture>
-                        <source srcset="img/feedback-avat-1@1x.webp 1x, img/feedback-avat-1@2x.webp 2x"
+                        <source srcset="img/review-avatar-1@1x.webp 1x, img/review-avatar-1@2x.webp 2x"
                           type="image/webp">
 
-                        <img class="feedback__avatar-img" src="img/feedback-avat-1@1x.jpg"
-                          srcset="img/feedback-avat-1@2x.jpg 2x" width="38" height="38" loading="lazy"
+                        <img class="review__avatar-img" src="img/review-avatar-1@1x.jpg"
+                          srcset="img/review-avatar-1@2x.jpg 2x" width="38" height="38" loading="lazy"
                           alt="аватарка пользователя">
                       </picture>
                     </div>
-                    <span class="feedback__name">Влада Голицина</span>
+                    <span class="review__name">Влада Голицина</span>
                   </div>
                 </div>
               </div>
             </li>
-            <!-- 2 -->
-            <li class="directions__item">
-              <div class="directions__description">
-                <h3 class="directions__title">Албания</h3>
-                <p class="directions__text">
+
+            <li class="countries-details__item">
+              <div class="countries-details__description">
+                <h3 class="countries-details__title">Албания</h3>
+                <p class="countries-details__text">
                   В Албании мы посетим Курорт Ксамиль. Этот курорт поразит вас чистейшей водой и удивительным пляжем.
                   Вначале кажется, что на пляже вас встречает обычный, правда невероятно белоснежный и слишком крупный
                   песок. Однако, присмотревшись, можно понять, что это не песок, а камни, перетёртые до такого мелкого
                   состояния.
                 </p>
-                <button type="button" class="directions__button button button--buy">Купить тур сейчас</button>
+                <button type="button" class="countries-details__button button button--buy">Купить тур сейчас</button>
               </div>
-              <div class="directions__feedback feedback">
-                <div class="feedback__img-container">
+              <div class="countries-details__review review">
+                <div class="review__img-container">
                   <picture>
                     <source media="(max-width: 767px)"
-                      srcset="img/feedback-bg-mobile@1x.webp 1x, img/feedback-bg-mobile@2x.webp 2x" type="image/webp">
+                      srcset="img/review-bg-mobile@1x.webp 1x, img/review-bg-mobile@2x.webp 2x" type="image/webp">
                     <source media="(max-width: 1023px)"
-                      srcset="img/feedback-tablet@1x.webp 1x, img/feedback-tablet@2x.webp 2x" type="image/webp">
+                      srcset="img/review-tablet@1x.webp 1x, img/review-tablet@2x.webp 2x" type="image/webp">
                     <source media="(min-width: 1024px)"
-                      srcset="img/feedback-bg-albania-desktop@1x.webp 1x, img/feedback-bg-albania-desktop@2x.webp 2x"
+                      srcset="img/review-bg-albania-desktop@1x.webp 1x, img/review-bg-albania-desktop@2x.webp 2x"
                       type="image/webp">
 
                     <source media="(max-width: 767px)"
-                      srcset="img/feedback-bg-mobile@1x.jpg 1x, img/feedback-bg-mobile@2x.jpg 2x">
+                      srcset="img/review-bg-mobile@1x.jpg 1x, img/review-bg-mobile@2x.jpg 2x">
                     <source media="(max-width: 1023px)"
-                      srcset="img/feedback-tablet@1x.jpg 1x, img/feedback-tablet@2x.jpg 2x">
-                    <img class="feedback__img" src="img/feedback-bg-albania-desktop@1x.jpg"
-                      srcset="img/feedback-bg-albania-desktop@2x.jpg 2x" width="430" height="596" loading="lazy"
+                      srcset="img/review-tablet@1x.jpg 1x, img/review-tablet@2x.jpg 2x">
+                    <img class="review__img" src="img/review-bg-albania-desktop@1x.jpg"
+                      srcset="img/review-bg-albania-desktop@2x.jpg 2x" width="430" height="596" loading="lazy"
                       alt="Побережье Албании">
                   </picture>
                 </div>
-                <div class="feedback__feed">
-                  <h4 class="feedback__title">Отзывы</h4>
-                  <p class="feedback__text">
+                <div class="review__feed">
+                  <h4 class="review__title">Отзывы</h4>
+                  <p class="review__text">
                     Замечательный курорт, обязательно стоит посетить. В следующий раз возьму с собой сестру, чтобы тоже
                     смогла вкусить все красоты природы :)
                   </p>
-                  <div class="feedback__author">
-                    <div class="feedback__avatar">
+                  <div class="review__author">
+                    <div class="review__avatar">
                       <picture>
-                        <source srcset="img/feedback-avat-5@1x.webp 1x, img/feedback-avat-5@2x.webp 2x"
+                        <source srcset="img/review-avatar-5@1x.webp 1x, img/review-avatar-5@2x.webp 2x"
                           type="image/webp">
 
-                        <img class="feedback__avatar-img" src="img/feedback-avat-5@1x.jpg"
-                          srcset="img/feedback-avat-5@2x.jpg 2x" width="38" height="38" loading="lazy"
+                        <img class="review__avatar-img" src="img/review-avatar-5@1x.jpg"
+                          srcset="img/review-avatar-5@2x.jpg 2x" width="38" height="38" loading="lazy"
                           alt="аватарка пользователя">
                       </picture>
                     </div>
-                    <span class="feedback__name">Маришка</span>
+                    <span class="review__name">Маришка</span>
                   </div>
                 </div>
               </div>
             </li>
-            <!-- 3 -->
-            <li class="directions__item">
-              <div class="directions__description">
-                <h3 class="directions__title">Македония</h3>
-                <p class="directions__text">
+
+            <li class="countries-details__item">
+              <div class="countries-details__description">
+                <h3 class="countries-details__title">Македония</h3>
+                <p class="countries-details__text">
                   В Македонии нашей целью будет посетить Палаошник, который расположился в удивительно красивой лесистой
                   местности возле Охридского озера и Самуиловой твердыни. А также мы заберемся на вершину горы Татичев
                   Камен где находится археологический памятник Кокино в длину около 100 метров.
                 </p>
-                <button type="button" class="directions__button button button--buy">Купить тур сейчас</button>
+                <button type="button" class="countries-details__button button button--buy">Купить тур сейчас</button>
               </div>
-              <div class="directions__feedback feedback">
-                <div class="feedback__img-container">
+              <div class="countries-details__review review">
+                <div class="review__img-container">
                   <picture>
                     <source media="(max-width: 767px)"
-                      srcset="img/feedback-bg-mobile@1x.webp 1x, img/feedback-bg-mobile@2x.webp 2x" type="image/webp">
+                      srcset="img/review-bg-mobile@1x.webp 1x, img/review-bg-mobile@2x.webp 2x" type="image/webp">
                     <source media="(max-width: 1023px)"
-                      srcset="img/feedback-tablet@1x.webp 1x, img/feedback-tablet@2x.webp 2x" type="image/webp">
+                      srcset="img/review-tablet@1x.webp 1x, img/review-tablet@2x.webp 2x" type="image/webp">
                     <source media="(min-width: 1024px)"
-                      srcset="img/feedback-bg-macedonia-desktop@1x.webp 1x, img/feedback-bg-macedonia-desktop@2x.webp 2x"
+                      srcset="img/review-bg-macedonia-desktop@1x.webp 1x, img/review-bg-macedonia-desktop@2x.webp 2x"
                       type="image/webp">
 
                     <source media="(max-width: 767px)"
-                      srcset="img/feedback-bg-mobile@1x.jpg 1x, img/feedback-bg-mobile@2x.jpg 2x">
+                      srcset="img/review-bg-mobile@1x.jpg 1x, img/review-bg-mobile@2x.jpg 2x">
                     <source media="(max-width: 1023px)"
-                      srcset="img/feedback-tablet@1x.jpg 1x, img/feedback-tablet@2x.jpg 2x">
-                    <img class="feedback__img" src="img/feedback-bg-macedonia-desktop@1x.jpg"
-                      srcset="img/feedback-bg-macedonia-desktop@2x.jpg 2x" width="430" height="596" loading="lazy"
+                      srcset="img/review-tablet@1x.jpg 1x, img/review-tablet@2x.jpg 2x">
+                    <img class="review__img" src="img/review-bg-macedonia-desktop@1x.jpg"
+                      srcset="img/review-bg-macedonia-desktop@2x.jpg 2x" width="430" height="596" loading="lazy"
                       alt="Церковь на фоне моря">
                   </picture>
                 </div>
-                <div class="feedback__feed">
-                  <h4 class="feedback__title">Отзывы</h4>
-                  <p class="feedback__text">
+                <div class="review__feed">
+                  <h4 class="review__title">Отзывы</h4>
+                  <p class="review__text">
                     Я бы сказал необычное старое здание. В архитектуре я не разбираюсь, но подъем в гору был очень
                     веселым так как люди оказались легкими и заводными. Красота природы впечатлила, особенно после
                     долгого пути в гору.
                   </p>
-                  <div class="feedback__author">
-                    <div class="feedback__avatar">
+                  <div class="review__author">
+                    <div class="review__avatar">
                       <picture>
-                        <source srcset="img/feedback-avat-4@1x.webp 1x, img/feedback-avat-4@2x.webp 2x"
+                        <source srcset="img/review-avatar-4@1x.webp 1x, img/review-avatar-4@2x.webp 2x"
                           type="image/webp">
 
-                        <img class="feedback__avatar-img" src="img/feedback-avat-4@1x.jpg"
-                          srcset="img/feedback-avat-4@2x.jpg 2x" width="38" height="38" loading="lazy"
+                        <img class="review__avatar-img" src="img/review-avatar-4@1x.jpg"
+                          srcset="img/review-avatar-4@2x.jpg 2x" width="38" height="38" loading="lazy"
                           alt="аватарка пользователя">
                       </picture>
                     </div>
-                    <span class="feedback__name">Михаил Кузьмин</span>
+                    <span class="review__name">Михаил Кузьмин</span>
                   </div>
                 </div>
               </div>
             </li>
-            <!-- 4 -->
-            <li class="directions__item">
-              <div class="directions__description">
-                <h3 class="directions__title">Черногория</h3>
-                <p class="directions__text">
+
+            <li class="countries-details__item">
+              <div class="countries-details__description">
+                <h3 class="countries-details__title">Черногория</h3>
+                <p class="countries-details__text">
                   Черногория удивит нас самым большим в Европе каньоном реки Тара, который в некоторых местах высотой
                   берегов доходит до 1300 метров, а шириной не превышает трех. При этом длина каньона составляет 80 км.
                 </p>
-                <button type="button" class="directions__button button button--buy">Купить тур сейчас</button>
+                <button type="button" class="countries-details__button button button--buy">Купить тур сейчас</button>
               </div>
-              <div class="directions__feedback feedback">
-                <div class="feedback__img-container">
+              <div class="countries-details__review review">
+                <div class="review__img-container">
                   <picture>
                     <source media="(max-width: 767px)"
-                      srcset="img/feedback-bg-mobile@1x.webp 1x, img/feedback-bg-mobile@2x.webp 2x" type="image/webp">
+                      srcset="img/review-bg-mobile@1x.webp 1x, img/review-bg-mobile@2x.webp 2x" type="image/webp">
                     <source media="(max-width: 1023px)"
-                      srcset="img/feedback-tablet@1x.webp 1x, img/feedback-tablet@2x.webp 2x" type="image/webp">
+                      srcset="img/review-tablet@1x.webp 1x, img/review-tablet@2x.webp 2x" type="image/webp">
                     <source media="(min-width: 1024px)"
-                      srcset="img/feedback-bg-montenegro-desktop@1x.webp 1x, img/feedback-bg-montenegro-desktop@2x.webp 2x"
+                      srcset="img/review-bg-montenegro-desktop@1x.webp 1x, img/review-bg-montenegro-desktop@2x.webp 2x"
                       type="image/webp">
 
                     <source media="(max-width: 767px)"
-                      srcset="img/feedback-bg-mobile@1x.jpg 1x, img/feedback-bg-mobile@2x.jpg 2x">
+                      srcset="img/review-bg-mobile@1x.jpg 1x, img/review-bg-mobile@2x.jpg 2x">
                     <source media="(max-width: 1023px)"
-                      srcset="img/feedback-tablet@1x.jpg 1x, img/feedback-tablet@2x.jpg 2x">
-                    <img class="feedback__img" src="img/feedback-bg-montenegro-desktop@1x.jpg"
-                      srcset="img/feedback-bg-montenegro-desktop@2x.jpg 2x" width="430" height="596" loading="lazy"
+                      srcset="img/review-tablet@1x.jpg 1x, img/review-tablet@2x.jpg 2x">
+                    <img class="review__img" src="img/review-bg-montenegro-desktop@1x.jpg"
+                      srcset="img/review-bg-montenegro-desktop@2x.jpg 2x" width="430" height="596" loading="lazy"
                       alt="Вид на речку с высоты птичьего полета">
                   </picture>
                 </div>
-                <div class="feedback__feed">
-                  <h4 class="feedback__title">Отзывы</h4>
-                  <p class="feedback__text">
+                <div class="review__feed">
+                  <h4 class="review__title">Отзывы</h4>
+                  <p class="review__text">
                     Неописуемой красоты каньон! Ничего прекраснее в жизни не видела, разве что в фильмах :) Всем советую
                   </p>
-                  <div class="feedback__author">
-                    <div class="feedback__avatar">
+                  <div class="review__author">
+                    <div class="review__avatar">
                       <picture>
-                        <source srcset="img/feedback-avat-2@1x.webp 1x, img/feedback-avat-2@2x.webp 2x"
+                        <source srcset="img/review-avatar-2@1x.webp 1x, img/review-avatar-2@2x.webp 2x"
                           type="image/webp">
 
-                        <img class="feedback__avatar-img" src="img/feedback-avat-2@1x.jpg"
-                          srcset="img/feedback-avat-2@2x.jpg 2x" width="38" height="38" loading="lazy"
+                        <img class="review__avatar-img" src="img/review-avatar-2@1x.jpg"
+                          srcset="img/review-avatar-2@2x.jpg 2x" width="38" height="38" loading="lazy"
                           alt="аватарка пользователя">
                       </picture>
                     </div>
-                    <span class="feedback__name">Анастасия Мей</span>
+                    <span class="review__name">Анастасия Мей</span>
                   </div>
                 </div>
               </div>
             </li>
-            <!-- 5 -->
-            <li class="directions__item">
-              <div class="directions__description">
-                <h3 class="directions__title">Хорватия</h3>
-                <p class="directions__text">
+            <li class="countries-details__item">
+              <div class="countries-details__description">
+                <h3 class="countries-details__title">Хорватия</h3>
+                <p class="countries-details__text">
                   В Хорватии мы посетим необычайную пещеру названную Бередине. Ее подземный мир увлечет вас на 80-ти
                   метровую глубину через 5 освещенных залов, украшенных удивительными нерукотворными скульптурами —
                   сталактитами и сталагмитами — формировавшимися тысячи и тысячи лет.
                 </p>
-                <button type="button" class="directions__button button button--buy">Купить тур сейчас</button>
+                <button type="button" class="countries-details__button button button--buy">Купить тур сейчас</button>
               </div>
-              <div class="directions__feedback feedback">
-                <div class="feedback__img-container">
+              <div class="countries-details__review review">
+                <div class="review__img-container">
                   <picture>
                     <source media="(max-width: 767px)"
-                      srcset="img/feedback-bg-mobile@1x.webp 1x, img/feedback-bg-mobile@2x.webp 2x" type="image/webp">
+                      srcset="img/review-bg-mobile@1x.webp 1x, img/review-bg-mobile@2x.webp 2x" type="image/webp">
                     <source media="(max-width: 1023px)"
-                      srcset="img/feedback-tablet@1x.webp 1x, img/feedback-tablet@2x.webp 2x" type="image/webp">
+                      srcset="img/review-tablet@1x.webp 1x, img/review-tablet@2x.webp 2x" type="image/webp">
                     <source media="(min-width: 1024px)"
-                      srcset="img/feedback-bg-croatia-desktop@1x.webp 1x, img/feedback-bg-croatia-desktop@2x.webp 2x"
+                      srcset="img/review-bg-croatia-desktop@1x.webp 1x, img/review-bg-croatia-desktop@2x.webp 2x"
                       type="image/webp">
 
                     <source media="(max-width: 767px)"
-                      srcset="img/feedback-bg-mobile@1x.jpg 1x, img/feedback-bg-mobile@2x.jpg 2x">
+                      srcset="img/review-bg-mobile@1x.jpg 1x, img/review-bg-mobile@2x.jpg 2x">
                     <source media="(max-width: 1023px)"
-                      srcset="img/feedback-tablet@1x.jpg 1x, img/feedback-tablet@2x.jpg 2x">
-                    <img class="feedback__img" src="img/feedback-bg-croatia-desktop@1x.jpg"
-                      srcset="img/feedback-bg-croatia-desktop@2x.jpg 2x" width="430" height="596" loading="lazy"
+                      srcset="img/review-tablet@1x.jpg 1x, img/review-tablet@2x.jpg 2x">
+                    <img class="review__img" src="img/review-bg-croatia-desktop@1x.jpg"
+                      srcset="img/review-bg-croatia-desktop@2x.jpg 2x" width="430" height="596" loading="lazy"
                       alt="Изображение пещер">
                   </picture>
                 </div>
-                <div class="feedback__feed">
-                  <h4 class="feedback__title">Отзывы</h4>
-                  <p class="feedback__text">
+                <div class="review__feed">
+                  <h4 class="review__title">Отзывы</h4>
+                  <p class="review__text">
                     Мы поехали всей семьей, я, моя жена и родители. Пещера просто незабываема! А то, что все это
                     формировалось тысячелетиями, мега необычно. Первоначально даже не верилось, но натур ни с чем не
                     спутать по итогу :)
                   </p>
-                  <div class="feedback__author">
-                    <div class="feedback__avatar">
+                  <div class="review__author">
+                    <div class="review__avatar">
                       <picture>
-                        <source srcset="img/feedback-avat-3@1x.webp 1x, img/feedback-avat-3@2x.webp 2x"
+                        <source srcset="img/review-avatar-3@1x.webp 1x, img/review-avatar-3@2x.webp 2x"
                           type="image/webp">
 
-                        <img class="feedback__avatar-img" src="img/feedback-avat-3@1x.jpg"
-                          srcset="img/feedback-avat-3@2x.jpg 2x" width="38" height="38" loading="lazy"
+                        <img class="review__avatar-img" src="img/review-avatar-3@1x.jpg"
+                          srcset="img/review-avatar-3@2x.jpg 2x" width="38" height="38" loading="lazy"
                           alt="аватарка пользователя">
                       </picture>
                     </div>
-                    <span class="feedback__name">Владимир Мулицин</span>
+                    <span class="review__name">Владимир Мулицин</span>
                   </div>
                 </div>
               </div>
@@ -512,8 +503,6 @@
         </div>
       </div>
     </section>
-
-    <!-- PRICES -->
 
     <section class="prices" id="prices">
       <div class="prices__container container">

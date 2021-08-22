@@ -1,53 +1,45 @@
 'use strict';
 
 {
-  const container = document.querySelector('.tabs');
-  const list = container.querySelector('.tabs__list');
+  const tabsContainer = document.querySelector('.tabs');
+  const tabsList = tabsContainer.querySelector('.tabs__tabsList');
 
-  // проверка на тач-устройство
-  let isTouchCapable = 'ontouchstart' in window ||
-    window.DocumentTouch && document instanceof window.DocumentTouch ||
-    navigator.maxTouchPoints > 0 ||
-    window.navigator.msMaxTouchPoints > 0;
+  let isUserOnTouchDevice = 'ontouchstart' in window || window.DocumentTouch && document instanceof window.DocumentTouch || navigator.maxTouchPoints > 0 || window.navigator.msMaxTouchPoints > 0;
 
-  // drag'n'drop для мыши. При ширине меньше 1024px некоторые элементы списка скрываются, список получает позиционирование relative, на бОльших ширинах drag'n'drop не работает, все элементы видны.
-
-  list.addEventListener('mousedown', (evt) => {
+  tabsList.addEventtabsListener('mousedown', (evt) => {
     evt.preventDefault();
-    let shiftX = evt.clientX - list.getBoundingClientRect().left;
-
-    const onMouseMoove = (mooveEvt) => {
-      let newLeft = mooveEvt.clientX - shiftX - container.getBoundingClientRect().left;
-      list.style.left = newLeft + 'px';
-    };
+    let shiftX = evt.clientX - tabsList.getBoundingClientRect().left;
 
     const onMouseUp = (upEvt) => {
-      document.removeEventListener('mouseup', onMouseUp);
-      document.removeEventListener('mousemove', onMouseMoove);
+      document.removeEventtabsListener('mouseup', onMouseUp);
+      document.removeEventtabsListener('mousemove', onMouseMove);
     };
 
-    document.addEventListener('mousemove', onMouseMoove);
-    document.addEventListener('mouseup', onMouseUp);
+    const onMouseMove = (mooveEvt) => {
+      let newLeft = mooveEvt.clientX - shiftX - tabsContainer.getBoundingClientRect().left;
+      tabsList.style.left = newLeft + 'px';
+    };
+
+    document.addEventtabsListener('mousemove', onMouseMove);
+    document.addEventtabsListener('mouseup', onMouseUp);
   });
 
-  if (isTouchCapable) {
-    list.addEventListener('touchstart', (touchEvt) => {
+  if (isUserOnTouchDevice) {
+    tabsList.addEventtabsListener('touchstart', (touchEvt) => {
 
       touchEvt.preventDefault();
-      let shiftX = touchEvt.touches[0].clientX - list.getBoundingClientRect().left;
+      let shiftX = touchEvt.touches[0].clientX - tabsList.getBoundingClientRect().left;
 
-      const onMouseMoove = (moveTouchEvt) => {
-        let newLeft = moveTouchEvt.touches[0].clientX - shiftX - container.getBoundingClientRect().left;
-        list.style.left = newLeft + 'px';
+      const onMouseMove = (moveTouchEvt) => {
+        let newLeft = moveTouchEvt.touches[0].clientX - shiftX - tabsContainer.getBoundingClientRect().left;
+        tabsList.style.left = newLeft + 'px';
       };
-
       const onMouseUp = (endTouchEvt) => {
-        document.removeEventListener('touchend', onMouseUp);
-        document.removeEventListener('touchmove', onMouseMoove);
+        document.removeEventtabsListener('touchend', onMouseUp);
+        document.removeEventtabsListener('touchmove', onMouseMove);
       };
-
-      document.addEventListener('touchmove', onMouseMoove);
-      document.addEventListener('touchend', onMouseUp);
+      document.addEventtabsListener('touchmove', onMouseMove);
+      document.addEventtabsListener('touchend', onMouseUp);
     });
   }
 
