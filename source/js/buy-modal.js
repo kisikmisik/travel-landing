@@ -22,8 +22,8 @@
 
   const onButtonClickModalOpen = (evt) => {
     evt.preventDefault();
-    if (!buyModal.classList.contains('modal--show')) {
-      buyModal.classList.add('modal--show');
+    if (!buyModal.classList.contains('popup--show')) {
+      buyModal.classList.add('popup--show');
       window.utilitary.setInputValuesFromLocalStorage(telInput, mailInput);
     }
 
@@ -74,13 +74,13 @@
       evt.preventDefault();
     } else {
       evt.preventDefault();
-      successModal.classList.add('modal--show');
+      successModal.classList.add('popup--show');
       document.addEventListener('keydown', onEscModalClose);
       closeButton.addEventListener('click', onCloseButtonModalClose);
       window.utilitary.setLocalStorage('tel', telInput.value, user);
       window.utilitary.setLocalStorage('email', mailInput.value, user);
       form.reset();
-      buyModal.classList.remove('modal--show');
+      buyModal.classList.remove('popup--show');
     }
   };
 

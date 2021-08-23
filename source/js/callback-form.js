@@ -51,7 +51,7 @@
       evt.preventDefault();
     } else {
       evt.preventDefault();
-      successModal.classList.add('modal--show');
+      successModal.classList.add('popup--show');
       document.addEventListener('keydown', onEscModalClose);
       closeButton.addEventListener('click', onCloseButtonModalClose);
       window.utilitary.setLocalStorage('tel', formTelInput.value, user);

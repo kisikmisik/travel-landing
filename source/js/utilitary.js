@@ -35,20 +35,20 @@
     let currentActiveModal = document.querySelector('.popup--show');
 
     if (evt.key === ESC_BUTTON && currentActiveModal) {
-      currentActiveModal.classList.remove('modal--show');
+      currentActiveModal.classList.remove('popup--show');
       document.removeEventListener('keydown', onEscButtonPressModalClose);
     }
   };
 
   const onCloseButtonModalClose = (modal) => {
-    if (modal.classList.contains('modal--show')) {
-      modal.classList.remove('modal--show');
+    if (modal.classList.contains('popup--show')) {
+      modal.classList.remove('popup--show');
     }
   };
 
   const onOverLayClickModalClose = (overlay, innerModal, evt) => {
     if (evt.target === overlay && evt.target !== innerModal) {
-      overlay.classList.remove('modal--show');
+      overlay.classList.remove('popup--show');
     }
   };
 
@@ -64,15 +64,15 @@
       input.classList.remove('form__input--invalid');
     }
 
-    if (input.classList.contains('modal__input--invalid')) {
-      input.classList.remove('modal__input--invalid');
+    if (input.classList.contains('popup__input--invalid')) {
+      input.classList.remove('popup__input--invalid');
     }
   };
 
   // установка стилей ошибки
   const setErrorStyle = (input) => {
-    if (input.classList.contains('modal__input')) {
-      input.classList.add('modal__input--invalid');
+    if (input.classList.contains('popup__input')) {
+      input.classList.add('popup__input--invalid');
     } else {
       input.classList.add('form__input--invalid');
     }

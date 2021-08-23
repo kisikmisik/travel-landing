@@ -1,9 +1,9 @@
 'use strict';
 
 {
-  const header = document.querySelector('.page-header');
+  const header = document.querySelector('.main-header');
   const toggler = header.querySelector('.toggler');
-  const menu = header.querySelector('.page-nav');
+  const menu = header.querySelector('.main-nav');
 
   const toggleTogglerState = () => {
     if (!toggler.classList.contains('toggler--active')) {
@@ -16,9 +16,9 @@
   };
 
   const toggleMenuState = () => {
-    menu.classList.contains('page-nav--opened') ?
-      menu.classList.remove('page-nav--opened') :
-      menu.classList.add('page-nav--opened');
+    menu.classList.contains('main-nav--opened') ?
+      menu.classList.remove('main-nav--opened') :
+      menu.classList.add('main-nav--opened');
   };
 
   const onTogglerClickMenuToggle = () => {
@@ -27,7 +27,7 @@
   };
 
   const onLinkClickCloseMenu = (evt) => {
-    if (evt.target.classList.contains('page-nav__link')) {
+    if (evt.target.classList.contains('main-nav__link')) {
       onTogglerClickMenuToggle();
     }
   };
@@ -37,8 +37,8 @@
 
 
   // скрывает меню при работающем js
-  if (header.classList.contains('page-header--nojs')) {
-    header.classList.remove('page-header--nojs');
+  if (header.classList.contains('main-header--nojs')) {
+    header.classList.remove('main-header--nojs');
   }
 
 }
