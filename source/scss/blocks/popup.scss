@@ -1,4 +1,4 @@
-.modal {
+.popup {
   position: fixed;
   display: none;
   top: 0;
@@ -14,7 +14,7 @@
   }
 }
 
-.modal__inner {
+.popup__inner {
   position: relative;
   top: 120px;
   left: 50%;
@@ -22,7 +22,7 @@
   display: flex;
   max-width: 728px;
   min-height: 444px;
-  background-color: $modal-inner-bg;
+  background-color: $popup-inner-bg;
 
   &--success {
     padding: 0 140px;
@@ -31,7 +31,7 @@
   }
 }
 
-.modal__close {
+.popup__close {
   @include button-reset;
 
   position: absolute;
@@ -46,12 +46,12 @@
   cursor: pointer;
 }
 
-.modal__form {
+.popup__form {
   padding: 72px 60px 20px;
   width: 390px;
 }
 
-.modal__title {
+.popup__title {
   margin: 0;
   margin-bottom: 50px;
   font-weight: 600;
@@ -71,11 +71,11 @@
   }
 }
 
-.modal__inputs {
+.popup__inputs {
   margin-bottom: 20px;
 }
 
-.modal__wrapper {
+.popup__wrapper {
   position: relative;
   margin-bottom: 20px;
 
@@ -95,7 +95,7 @@
   }
 }
 
-.modal__input {
+.popup__input {
   padding: 16px 13px;
   width: 100%;
   height: 50px;
@@ -118,49 +118,49 @@
   }
 }
 
-.modal__submit {
+.popup__submit {
   margin: 0 auto;
   padding: 18px 20px;
   width: 176px;
 }
 
 @media (max-width: $desktop) {
-  .modal__img-wrapper {
+  .popup__img-wrapper {
     display: none;
   }
 
-  .modal__inner {
+  .popup__inner {
     left: 0;
     margin: 0 auto;
     width: 70%;
     background-color: $white;
   }
 
-  .modal__form {
+  .popup__form {
     padding: 100px 50px 50px;
     width: 100%;
   }
 
-  .modal__title {
+  .popup__title {
     margin-bottom: 50px;
   }
 }
 
 @media (max-width: $tablet) {
-  .modal__inner {
+  .popup__inner {
     width: 100%;
     min-height: 568px;
   }
 
-  .modal__form {
+  .popup__form {
     padding: 99px 15px 20px;
   }
 
-  .modal__title {
+  .popup__title {
     margin-bottom: 51px;
   }
 
-  .modal__submit {
+  .popup__submit {
     width: 100%;
   }
 }

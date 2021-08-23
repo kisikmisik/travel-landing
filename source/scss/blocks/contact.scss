@@ -1,13 +1,13 @@
-.callback {
+.contact {
   padding: 36px 0 30px;
 }
 
-.callback__wrapper {
+.contact__wrapper {
   margin-left: 20.156%;
   width: 43.9583%;
 }
 
-.callback__inner {
+.contact__inner {
   position: relative;
   display: flex;
   align-items: center;
@@ -25,12 +25,12 @@
 }
 
 @media (max-width: $desktop) {
-  .callback__wrapper {
+  .contact__wrapper {
     margin: 0;
     width: 100%;
   }
 
-  .callback__inner {
+  .contact__inner {
     width: 100%;
     justify-content: center;
     background-image: url("../img/form-bg-tablet@1x.jpg");
@@ -42,11 +42,11 @@
 }
 
 @media (max-width: $tablet) {
-  .callback {
+  .contact {
     padding-top: 41px;
   }
 
-  .callback__inner {
+  .contact__inner {
     margin: 0 auto;
     width: 90%;
     min-height: auto;

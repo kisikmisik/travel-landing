@@ -1,10 +1,10 @@
-.page-nav {
+.main-nav {
   margin-left: auto;
   margin-right: 4%;
   max-width: 42.6985%;
 }
 
-.page-nav__list {
+.main-nav__list {
   @include list-reset;
 
   display: flex;
@@ -12,7 +12,7 @@
   align-items: center;
 }
 
-.page-nav__item {
+.main-nav__item {
   position: relative;
   margin-right: 26px;
 
@@ -21,7 +21,7 @@
   }
 }
 
-.page-nav__link {
+.main-nav__link {
   @include transition;
 
   padding: 5px 10px;
@@ -40,7 +40,7 @@
 }
 
 @media (max-width: $desktop) {
-  .page-nav {
+  .main-nav {
     position: absolute;
     top: 0;
     left: 0;
@@ -59,18 +59,18 @@
     }
   }
 
-  .page-nav__list {
+  .main-nav__list {
     margin: 0 auto;
     max-width: none;
     width: 90%;
   }
 
-  .page-nav--opened > .page-nav__list {
+  .main-nav--opened > .main-nav__list {
     flex-direction: column;
     align-items: flex-start;
   }
 
-  .page-nav__item {
+  .main-nav__item {
     margin-right: 0;
     margin-bottom: 62px;
     width: 100%;
@@ -80,7 +80,7 @@
     }
   }
 
-  .page-nav__link {
+  .main-nav__link {
     display: block;
     padding: 0;
     font-size: 20px;

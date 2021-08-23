@@ -1,13 +1,13 @@
-.page-footer {
+.main-footer {
   padding: 139px 0 78px;
 }
 
-.page-footer__container {
+.main-footer__container {
   display: flex;
   flex-wrap: wrap;
 }
 
-.page-footer__title {
+.main-footer__title {
   margin: 0;
   margin-bottom: 22px;
   font-size: 18px;
@@ -17,7 +17,7 @@
   color: $black;
 }
 
-.page-footer__section {
+.main-footer__section {
   &--coming {
     padding-left: 14px;
     width: 34.5004%;
@@ -37,12 +37,12 @@
   }
 }
 
-.page-footer__wrapper {
+.main-footer__wrapper {
   display: flex;
   flex-wrap: wrap;
 }
 
-.page-footer__list {
+.main-footer__list {
   @include list-reset;
 
   display: flex;
@@ -51,13 +51,13 @@
   min-width: 33.3333%;
 }
 
-.page-footer__item {
+.main-footer__item {
   margin-bottom: 10px;
   font-weight: 400;
   color: rgba($color: $black, $alpha: 0.5);
 }
 
-.page-footer__text {
+.main-footer__text {
   margin: 0;
   padding-right: 9px;
   font-weight: 400;
@@ -68,11 +68,11 @@
 }
 
 @media (max-width: $desktop) {
-  .page-footer {
+  .main-footer {
     padding-top: 51px;
   }
 
-  .page-footer__section {
+  .main-footer__section {
     padding: 0;
 
     &--coming {
@@ -91,33 +91,33 @@
       width: 100%;
       border-top: 1px solid $footer-border-color;
 
-      .page-footer__title {
+      .main-footer__title {
         text-align: center;
       }
     }
   }
 
-  .page-footer__title {
+  .main-footer__title {
     &--contacts {
       margin-bottom: 20px;
     }
   }
 
-  .page-footer__list {
+  .main-footer__list {
     min-width: 32.333%;
   }
 
-  .page-footer__text {
+  .main-footer__text {
     text-align: center;
   }
 
-  .page-footer__linebreak {
+  .main-footer__linebreak {
     display: none;
   }
 }
 
 @media (max-width: $tablet) {
-  .page-footer {
+  .main-footer {
     padding-top: 91px;
 
     .container {
@@ -125,7 +125,7 @@
     }
   }
 
-  .page-footer__title {
+  .main-footer__title {
     text-align: center;
 
     &--contacts {
@@ -134,7 +134,7 @@
     }
   }
 
-  .page-footer__section {
+  .main-footer__section {
     width: 100%;
     border: none;
     border-bottom: 1px solid $footer-border-color;
@@ -151,11 +151,11 @@
     }
   }
 
-  .page-footer__wrapper {
+  .main-footer__wrapper {
     flex-wrap: wrap;
   }
 
-  .page-footer__list {
+  .main-footer__list {
     margin-bottom: 9px;
     width: 50%;
     flex-grow: 1;
@@ -170,7 +170,7 @@
     }
   }
 
-  .page-footer__text {
+  .main-footer__text {
     margin: 0 auto;
     padding-right: 0;
     max-width: 450px;

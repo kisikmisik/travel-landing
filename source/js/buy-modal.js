@@ -5,15 +5,15 @@
   const TEL_LENGTH = 12;
 
   const buyButtons = document.querySelectorAll('.button--buy');
-  const buyModal = document.querySelector('.modal--buy');
-  const closeButton = buyModal.querySelector('.modal__close');
-  const modalInner = buyModal.querySelector('.modal__inner');
+  const buyModal = document.querySelector('.popup--buy');
+  const closeButton = buyModal.querySelector('.popup__close');
+  const modalInner = buyModal.querySelector('.popup__inner');
 
-  const form = modalInner.querySelector('.modal__form');
-  const telInput = form.querySelector('.modal__input--tel');
-  const mailInput = form.querySelector('.modal__input--email');
+  const form = modalInner.querySelector('.popup__form');
+  const telInput = form.querySelector('.popup__input--tel');
+  const mailInput = form.querySelector('.popup__input--email');
 
-  const successModal = document.querySelector('.modal--success');
+  const successModal = document.querySelector('.popup--success');
 
   let errors = {};
   let user = {};

@@ -32,7 +32,7 @@
   // ------------- модалки
 
   const onEscButtonPressModalClose = (evt) => {
-    let currentActiveModal = document.querySelector('.modal--show');
+    let currentActiveModal = document.querySelector('.popup--show');
 
     if (evt.key === ESC_BUTTON && currentActiveModal) {
       currentActiveModal.classList.remove('modal--show');

@@ -9,9 +9,9 @@
   const formTelInput = form.querySelector('#tel');
   const formEmailInput = form.querySelector('#email');
 
-  const successModal = document.querySelector('.modal--success');
-  const closeButton = successModal.querySelector('.modal__close');
-  const modalInner = successModal.querySelector('.modal__inner');
+  const successModal = document.querySelector('.popup--success');
+  const closeButton = successModal.querySelector('.popup__close');
+  const modalInner = successModal.querySelector('.popup__inner');
 
   let errors = {};
   let user = {};

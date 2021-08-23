@@ -1,4 +1,4 @@
-.card {
+.package {
   display: flex;
   flex-direction: column;
   padding-bottom: 28px;
@@ -15,26 +15,26 @@
       color: $orange;
     }
 
-    .card__title,
-    .card__price {
+    .package__title,
+    .package__price {
       color: $orange;
     }
 
-    .card__inner {
+    .package__inner {
       border-color: rgba($color: $orange, $alpha: 0.5);
     }
   }
 }
 
-.card__wrapper {
+.package__wrapper {
   padding-top: 37px;
 }
 
-.card__header {
+.package__header {
   padding: 0 26px;
 }
 
-.card__inner {
+.package__inner {
   display: flex;
   flex-wrap: wrap;
   padding-bottom: 28px;
@@ -42,7 +42,7 @@
   transition: border-color 0.3s ease;
 }
 
-.card__title {
+.package__title {
   margin: 0;
   margin-bottom: 36px;
   font-weight: 600;
@@ -52,7 +52,7 @@
   transition: color 0.3s ease;
 }
 
-.card__price {
+.package__price {
   margin: 0;
   margin-left: auto;
   padding-right: 5px;
@@ -62,7 +62,7 @@
   transition: color 0.3s ease;
 }
 
-.card__promo {
+.package__promo {
   margin: 0;
   padding-right: 35px;
   font-size: 16px;
@@ -72,7 +72,7 @@
   color: $black-alt;
 }
 
-.card__list {
+.package__list {
   @include list-reset;
 
   display: flex;
@@ -85,7 +85,7 @@
   line-height: 32px;
 }
 
-.card__item {
+.package__item {
   position: relative;
   padding-left: 29px;
   padding-right: 10px;
@@ -95,13 +95,13 @@
   }
 }
 
-.card--simple {
-  .card__list {
+.package--simple {
+  .package__list {
     min-height: 345px;
   }
 }
 
-.card__check {
+.package__check {
   position: absolute;
   left: -5px;
   margin-top: 5px;
@@ -109,7 +109,7 @@
   height: 22px;
 }
 
-.card__button {
+.package__button {
   margin: 0 auto;
   margin-top: auto;
   width: 84.5%;
@@ -117,26 +117,26 @@
 }
 
 @media (max-width: 1765px) {
-  .card__title {
+  .package__title {
     font-size: 22px;
   }
 
-  .card__price {
+  .package__price {
     font-size: 20px;
   }
 }
 
 @media (max-width: 1445px) {
-  .card__inner {
+  .package__inner {
     flex-direction: column;
     align-items: center;
   }
 
-  .card__title {
+  .package__title {
     margin-bottom: 10px;
   }
 
-  .card__price {
+  .package__price {
     margin: 0;
     margin-bottom: 10px;
     text-align: center;
@@ -144,7 +144,7 @@
 }
 
 @media (max-width: $desktop) {
-  .card {
+  .package {
     margin-bottom: 30px;
     padding-bottom: 0;
     width: 291px;
@@ -152,7 +152,7 @@
     border: none;
 
     &:hover {
-      .card__wrapper {
+      .package__wrapper {
         border-color: $orange;
       }
     }
@@ -162,7 +162,7 @@
     }
   }
 
-  .card__wrapper {
+  .package__wrapper {
     padding-top: 31px;
     min-height: 579px;
     border: 1px solid rgba($color: $black-alt, $alpha: 0.3);
@@ -172,46 +172,46 @@
     border-top-right-radius: 6px;
   }
 
-  .card__header {
+  .package__header {
     padding: 0 18px;
   }
 
-  .card__inner {
+  .package__inner {
     flex-direction: column;
     align-items: center;
     padding-bottom: 8px;
   }
 
-  .card__title {
+  .package__title {
     margin-bottom: 7px;
     font-size: 24px;
     line-height: 34px;
     letter-spacing: -1.5px;
   }
 
-  .card__price {
+  .package__price {
     margin: 0;
     margin-bottom: 12px;
     font-size: 25px;
   }
 
-  .card__promo {
+  .package__promo {
     padding: 0;
     font-size: 16px;
     text-align: center;
   }
 
-  .card__list {
+  .package__list {
     padding: 24px 22px 0;
   }
 
-  .card__item {
+  .package__item {
     padding-left: 30px;
     padding-right: 0;
     margin-bottom: 8px;
   }
 
-  .card__button {
+  .package__button {
     margin: 0;
     padding: 20px;
     width: 100%;
@@ -222,16 +222,16 @@
 }
 
 @media (max-width: $tablet) {
-  .card__wrapper {
+  .package__wrapper {
     min-height: 565px;
   }
 
-  .card--simple {
-    .card__list {
+  .package--simple {
+    .package__list {
       min-height: 347px;
     }
 
-    .card__wrapper {
+    .package__wrapper {
       min-height: 576px;
     }
   }

@@ -1,8 +1,8 @@
-.promo {
+.greetings {
   display: flex;
   padding: 180px 5.2083% 297px;
-  background-color: $promo-bg;
-  background-image: url("../img/promo-desktop@1x.jpg");
+  background-color: $greetings-bg;
+  background-image: url("../img/greetings-desktop@1x.jpg");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -10,7 +10,7 @@
   color: $white;
 
   @media (min-resolution: $retina) {
-    background-image: url("../img/promo-desktop@2x.jpg");
+    background-image: url("../img/greetings-desktop@2x.jpg");
   }
 
   @media (max-width: 1023px) {
@@ -18,13 +18,13 @@
   }
 }
 
-.promo__inner {
+.greetings__inner {
   margin-left: auto;
   margin-right: 18.9%;
   width: 24.4186%;
 }
 
-.promo__title {
+.greetings__title {
   margin: 0;
   margin-bottom: 30px;
   font-weight: 600;
@@ -33,7 +33,7 @@
   letter-spacing: -3.1px;
 }
 
-.promo__text {
+.greetings__text {
   margin: 0;
   margin-bottom: 37px;
   width: 376px;
@@ -42,7 +42,7 @@
   letter-spacing: -0.2px;
 }
 
-.promo__button {
+.greetings__button {
   position: relative;
   padding-left: 40px;
   width: 340px;
@@ -63,22 +63,22 @@
 }
 
 @media (max-width: $desktop) {
-  .promo {
+  .greetings {
     padding: 60px;
     min-height: 344px;
-    background-image: url("../img/promo-tablet@1x.jpg");
+    background-image: url("../img/greetings-tablet@1x.jpg");
 
     @media (min-resolution: $retina) {
-      background-image: url("../img/promo-tablet@2x.jpg");
+      background-image: url("../img/greetings-tablet@2x.jpg");
     }
   }
 
-  .promo__inner {
+  .greetings__inner {
     margin: 0;
     width: 100%;
   }
 
-  .promo__title {
+  .greetings__title {
     margin-bottom: 14px;
     font-size: 30px;
     line-height: 45px;
@@ -86,7 +86,7 @@
     letter-spacing: -1px;
   }
 
-  .promo__text {
+  .greetings__text {
     @include push--auto;
 
     margin-bottom: 11px;
@@ -94,7 +94,7 @@
     text-align: center;
   }
 
-  .promo__button {
+  .greetings__button {
     @include push--auto;
 
     width: 250px;
@@ -109,7 +109,7 @@
 }
 
 @media (max-width: $tablet) {
-  .promo {
+  .greetings {
     padding: 0;
     padding-bottom: 40px;
     background-image: none;
@@ -117,39 +117,39 @@
     color: $black;
   }
 
-  .promo__wrapper {
+  .greetings__wrapper {
     display: flex;
     align-items: center;
     justify-content: center;
     margin-bottom: 20px;
     padding: 20px;
     min-height: 235px;
-    background-color: $promo-bg;
-    background-image: url("../img/promo-mobile@1x.jpg");
+    background-color: $greetings-bg;
+    background-image: url("../img/greetings-mobile@1x.jpg");
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
 
     @media (min-resolution: $retina) {
-      background-image: url("../img/promo-mobile@2x.jpg");
+      background-image: url("../img/greetings-mobile@2x.jpg");
     }
   }
 
-  .promo__title {
+  .greetings__title {
     margin: 0;
     font-size: 24px;
     line-height: 36px;
     color: $white;
   }
 
-  .promo__text {
+  .greetings__text {
     max-width: 450px;
     width: 87.5%;
     margin-bottom: 20px;
     color: $black-alt;
   }
 
-  .promo__button {
+  .greetings__button {
     width: 288px;
     letter-spacing: 2.5px;
   }
